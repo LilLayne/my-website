@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <title id="pageTitle">LOVE.EXE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- =====================================================
+         BACKGROUND
+    ====================================================== -->
+
+    <div class="ambient ambient-1"></div>
+    <div class="ambient ambient-2"></div>
+    <div class="ambient ambient-3"></div>
+
+    <div class="stars">
+        <span class="star star-1">✦</span>
+        <span class="star star-2">✧</span>
+        <span class="star star-3">✦</span>
+        <span class="star star-4">✧</span>
+        <span class="star star-5">✦</span>
+        <span class="star star-6">✧</span>
+        <span class="star star-7">✦</span>
+        <span class="star star-8">✧</span>
+    </div>
+
+    <div class="cloud cloud-a"></div>
+    <div class="cloud cloud-b"></div>
+    <div class="cloud cloud-c"></div>
+
+
+    <!-- =====================================================
+         GLOBAL UI
+    ====================================================== -->
+
+    <div class="system-pill">
+        <span>SYSTEM</span>
+        <span class="system-heart">♥</span>
+    </div>
+
+    <div class="top-controls">
+
+        <button
+            type="button"
+            class="glass-icon"
+            id="musicBtn"
+            aria-label="Toggle music"
+        >
+            ♪
+        </button>
+
+        <button
+            type="button"
+            class="glass-icon"
+            id="soundBtn"
+            aria-label="Toggle sound"
+        >
+            ◖)))
+        </button>
+
+        <button
+            type="button"
+            class="glass-icon"
+            id="sparkleBtn"
+            aria-label="Sparkles"
+        >
+            ✦
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         SCENE 1 — LANDING
+    ====================================================== -->
+
+    <section id="landingScreen" class="scene active">
+
+        <main class="hero">
+
+            <div class="folder-wrap">
+
+                <div class="folder">
+
+                    <div class="folder-tab"></div>
+
+                    <div class="folder-body">
+
+                        <div class="folder-heart">
+                            ♥
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="tiny-spark spark-left">
+                    ✧
+                </div>
+
+                <div class="tiny-spark spark-right">
+                    ✦
+                </div>
+
+            </div>
+
+
+            <div class="love-system">
+
+                <span>♥</span>
+
+                <span>
+                    SYSTEM // LOVE.EXE
+                </span>
+
+                <span>♥</span>
+
+            </div>
+
+
+            <h1 class="logo">
+
+                <span class="logo-love">
+                    LOVE
+                </span>
+
+                <span class="logo-dot">
+                    .
+                </span>
+
+                <span class="logo-exe">
+                    EXE
+                </span>
+
+            </h1>
+
+
+            <!-- CUSTOM MESSAGE -->
+
+            <div class="message-box">
+
+                <span class="message-heart">
+                    ♥
+                </span>
+
+                <p id="landingMessage">
+                    Someone made this<br>
+                    especially for you.
+                </p>
+
+                <span class="message-heart">
+                    ♥
+                </span>
+
+            </div>
+
+
+            <button
+                type="button"
+                id="startBtn"
+                class="start-button"
+            >
+
+                <span class="wing">
+                    𐙚
+                </span>
+
+                <span class="start-text">
+                    START
+                </span>
+
+                <span class="start-arrow">
+                    →
+                </span>
+
+                <span class="button-heart">
+                    ♥
+                </span>
+
+            </button>
+
+
+            <div class="story-hint">
+
+                <span>→</span>
+
+                <span>
+                    Click to begin our little story
+                </span>
+
+                <span>←</span>
+
+            </div>
+
+        </main>
+
+
+        <div class="corner-card special-card">
+
+            <div class="special-icon">
+                ★
+            </div>
+
+            <div>
+                <span>You're</span>
+
+                <span>
+                    special <b>♥</b>
+                </span>
+            </div>
+
+        </div>
+
+
+        <div class="corner-card today-card">
+
+            <div>
+                <span>Today is</span>
+                <span>a good day</span>
+                <span>for love ♡</span>
+            </div>
+
+            <div class="envelope">
+                ♥
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCENE 2 — BOOT
+    ====================================================== -->
+
+    <section id="bootScreen" class="scene boot-screen">
+
+        <div class="boot-core">
+
+            <div class="core-ring ring-1"></div>
+            <div class="core-ring ring-2"></div>
+            <div class="core-ring ring-3"></div>
+
+            <div class="core-heart">
+                ♥
+            </div>
+
+        </div>
+
+
+        <div class="boot-label">
+            LOVE.EXE
+        </div>
+
+
+        <h2 class="boot-title">
+            Getting things ready...
+        </h2>
+
+
+        <p id="bootStatus" class="boot-status">
+            Warming up the little heart...
+        </p>
+
+
+        <div class="progress-container">
+
+            <div class="progress-track">
+
+                <div
+                    id="progressFill"
+                    class="progress-fill"
+                ></div>
+
+            </div>
+
+            <div
+                id="progressPercent"
+                class="progress-percent"
+            >
+                0%
+            </div>
+
+        </div>
+
+
+        <div class="terminal-box">
+
+            <div id="terminal1">
+                <span>›</span>
+                connecting to heart...
+            </div>
+
+            <div id="terminal2">
+                <span>›</span>
+                searching for courage...
+            </div>
+
+            <div id="terminal3">
+                <span>›</span>
+                preparing something special...
+            </div>
+
+        </div>
+
+
+        <div class="boot-footer">
+            ♥ LOVE.EXE v1.0 ♥
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCENE 2.5 — READY
+    ====================================================== -->
+
+    <section id="readyScreen" class="scene ready-screen">
+
+        <div class="ready-orb">
+
+            <div class="ready-heart">
+                ♥
+            </div>
+
+        </div>
+
+
+        <div class="ready-label">
+            SYSTEM READY
+        </div>
+
+
+        <h2 class="ready-title">
+            Okay...
+        </h2>
+
+
+        <p class="ready-copy">
+            I think I'm ready<br>
+            to ask you something.
+        </p>
+
+
+        <button
+            type="button"
+            id="continueBtn"
+            class="continue-button"
+        >
+            CONTINUE
+            <span>→</span>
+        </button>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCENE 3 — QUESTIONS
+    ====================================================== -->
+
+    <section
+        id="questionScreen"
+        class="scene question-screen"
+    >
+
+        <div class="question-top">
+
+            <div class="question-label">
+                A LITTLE SOMETHING
+            </div>
+
+            <div
+                id="questionCounter"
+                class="question-counter"
+            >
+                01 / 03
+            </div>
+
+        </div>
+
+
+        <div class="question-progress">
+
+            <span
+                class="progress-dot active"
+                data-dot="0"
+            ></span>
+
+            <span
+                class="progress-dot"
+                data-dot="1"
+            ></span>
+
+            <span
+                class="progress-dot"
+                data-dot="2"
+            ></span>
+
+        </div>
+
+
+        <div class="question-card">
+
+            <div class="card-sparkle sparkle-left">
+                ✦
+            </div>
+
+            <div class="card-sparkle sparkle-right">
+                ✧
+            </div>
+
+
+            <div class="question-icon">
+                ♡
+            </div>
+
+
+            <div
+                id="questionText"
+                class="question-text"
+            >
+                Do you enjoy talking to me?
+            </div>
+
+
+            <div
+                id="questionSubtext"
+                class="question-subtext"
+            >
+                Be honest... I won't judge.
+            </div>
+
+
+            <div
+                id="answers"
+                class="answers"
+            ></div>
+
+
+            <div class="tiny-note">
+                take your time ♡
+            </div>
+
+        </div>
+
+
+        <div class="question-bottom">
+            your answers are safe here
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCENE 4A — ANALYSIS
+    ====================================================== -->
+
+    <section
+        id="analysisScreen"
+        class="scene analysis-screen"
+    >
+
+        <div class="analysis-card">
+
+            <div class="analysis-orb">
+
+                <div class="analysis-heart">
+                    ♡
+                </div>
+
+            </div>
+
+
+            <div class="analysis-label">
+                ANALYZING YOUR ANSWERS
+            </div>
+
+
+            <h2>
+                One moment...
+            </h2>
+
+
+            <p class="analysis-subtitle">
+                I'm trying to figure something out.
+            </p>
+
+
+            <div class="fake-stats">
+
+                <div class="fake-stat">
+
+                    <div class="stat-heading">
+                        <span>Comfort</span>
+                        <span>86%</span>
+                    </div>
+
+                    <div class="stat-track">
+                        <i style="width: 86%"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="fake-stat">
+
+                    <div class="stat-heading">
+                        <span>Smiles</span>
+                        <span>94%</span>
+                    </div>
+
+                    <div class="stat-track">
+                        <i style="width: 94%"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="fake-stat">
+
+                    <div class="stat-heading">
+                        <span>Chemistry</span>
+                        <span>91%</span>
+                    </div>
+
+                    <div class="stat-track">
+                        <i style="width: 91%"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="analysisStatus"
+                class="analysis-status"
+            >
+                Calculating...
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCENE 4B — MYSTERY
+    ====================================================== -->
+
+    <section
+        id="mysteryScreen"
+        class="scene mystery-screen"
+    >
+
+        <div class="mystery-orbit"></div>
+
+        <div class="mystery-symbol">
+            ♥
+        </div>
+
+
+        <div class="mystery-label">
+            ANALYSIS COMPLETE
+        </div>
+
+
+        <h2 class="mystery-title">
+            There's one thing
+            <br>
+            I can't calculate.
+        </h2>
+
+
+        <div class="mystery-divider"></div>
+
+
+        <div class="mystery-word">
+            FEELINGS
+        </div>
+
+
+        <p class="mystery-copy">
+            Some things aren't numbers.<br>
+            Some things are just... felt.
+        </p>
+
+
+        <button
+            type="button"
+            id="mysteryContinueBtn"
+            class="soft-button"
+        >
+            THERE'S MORE
+            <span>→</span>
+        </button>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCENE 4C — CONFESSION
+    ====================================================== -->
+
+    <section
+        id="confessionScreen"
+        class="scene confession-screen"
+    >
+
+        <div class="confession-frame">
+
+            <div class="confession-small">
+                A LITTLE CONFESSION
+            </div>
+
+
+            <div
+                id="confessionText"
+                class="confession-text"
+            ></div>
+
+
+            <div
+                id="confessionCursor"
+                class="confession-cursor"
+            >
+                |
+            </div>
+
+
+            <div class="confession-heart">
+                ♥
+            </div>
+
+
+            <button
+                type="button"
+                id="confessionContinueBtn"
+                class="soft-button confession-button"
+            >
+                JUST ONE MORE THING
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCENE 5 — FINAL QUESTION
+    ====================================================== -->
+
+    <section
+        id="valentineScreen"
+        class="scene valentine-screen"
+    >
+
+        <div class="valentine-aura"></div>
+
+        <div class="valentine-orbit orbit-a"></div>
+
+        <div class="valentine-orbit orbit-b"></div>
+
+
+        <div class="valentine-content">
+
+            <div class="valentine-label">
+                ONE LAST QUESTION
+            </div>
+
+
+            <div class="valentine-heart">
+                ♥
+            </div>
+
+
+            <h2 class="valentine-title">
+                Will you be<br>
+                my Valentine?
+            </h2>
+
+
+            <p
+                id="valentineSubtitle"
+                class="valentine-subtitle"
+            >
+                You don't have to say anything perfect.<br>
+                Just tell me what your heart says.
+            </p>
+
+
+            <div class="valentine-actions">
+
+                <button
+                    type="button"
+                    id="yesBtn"
+                    class="valentine-yes"
+                >
+
+                    <span class="yes-heart">
+                        ♥
+                    </span>
+
+                    <span>
+                        YES
+                    </span>
+
+                    <small>
+                        I'd love to
+                    </small>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    id="timeBtn"
+                    class="valentine-time"
+                >
+
+                    <span>
+                        I NEED TIME
+                    </span>
+
+                    <small>
+                        Let me think
+                    </small>
+
+                </button>
+
+            </div>
+
+
+            <div class="valentine-note">
+                whatever your answer, thank you for coming this far ♡
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCENE 5A — YES FINAL
+    ====================================================== -->
+
+    <section
+        id="yesScreen"
+        class="scene yes-screen"
+    >
+
+        <div class="final-stars">
+
+            <span>✦</span>
+            <span>✧</span>
+            <span>♡</span>
+            <span>✦</span>
+            <span>♡</span>
+            <span>✧</span>
+            <span>♥</span>
+
+        </div>
+
+
+        <div class="final-glow"></div>
+
+
+        <div
+            id="celebration"
+            class="celebration"
+        ></div>
+
+
+        <div class="yes-card">
+
+            <div class="accepted-label">
+                SYSTEM MESSAGE
+            </div>
+
+
+            <div class="accepted-heart">
+                ♥
+            </div>
+
+
+            <div class="accepted-status">
+                VALENTINE ACCEPTED
+            </div>
+
+
+            <div class="accepted-line"></div>
+
+
+            <h2 class="final-title">
+                You said yes.
+            </h2>
+
+
+            <p class="final-copy">
+                I think this might be<br>
+                my favorite answer ever.
+            </p>
+
+
+            <div class="memory-divider"></div>
+
+
+            <div class="memory-system">
+
+                <div class="memory-icon">
+                    ♡
+                </div>
+
+                <div class="memory-content">
+
+                    <div class="memory-label">
+                        NEW MEMORY
+                    </div>
+
+                    <div
+                        id="memoryStatus"
+                        class="memory-status"
+                    >
+                        Creating...
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="memory-meta">
+
+                <span id="memoryDate">
+                    AUG 14, 2026
+                </span>
+
+                <span class="meta-dot">
+                    •
+                </span>
+
+                <span>
+                    LOVE.EXE
+                </span>
+
+            </div>
+
+
+            <div
+                id="finalMessage"
+                class="final-message"
+            >
+                Maybe this is where
+                our little story begins.
+            </div>
+
+
+            <div class="final-signature">
+                made with a little courage ♡
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCENE 5B — NEED TIME
+    ====================================================== -->
+
+    <section
+        id="timeScreen"
+        class="scene time-screen"
+    >
+
+        <div class="time-card">
+
+            <div class="time-heart">
+                ♡
+            </div>
+
+
+            <div class="time-label">
+                THAT'S OKAY
+            </div>
+
+
+            <h2>
+                Take your time.
+            </h2>
+
+
+            <p>
+                You don't have to answer<br>
+                right away.
+            </p>
+
+
+            <div class="time-divider"></div>
+
+
+            <div class="time-message">
+                I'll be glad you came this far.<br>
+                And I'll respect your answer.
+            </div>
+
+
+            <div class="time-footer">
+                some things are worth waiting for ♡
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         AUDIO
+    ====================================================== -->
+
+    <audio
+        id="bgm"
+        src="assets/audio/bgm.mp3"
+        loop
+        preload="auto"
+    ></audio>
+
+    <audio
+        id="clickSound"
+        src="assets/audio/click.mp3"
+        preload="auto"
+    ></audio>
+
+    <audio
+        id="hoverSound"
+        src="assets/audio/hover.mp3"
+        preload="auto"
+    ></audio>
+
+    <audio
+        id="transitionSound"
+        src="assets/audio/transition.mp3"
+        preload="auto"
+    ></audio>
+
+    <audio
+        id="heartbeatSound"
+        src="assets/audio/heartbeat.mp3"
+        preload="auto"
+    ></audio>
+
+    <audio
+        id="successSound"
+        src="assets/audio/success.mp3"
+        preload="auto"
+    ></audio>
+
+
+    <!-- =====================================================
+         PARTICLE CONTAINER
+    ====================================================== -->
+
+    <div id="floatingHearts"></div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
